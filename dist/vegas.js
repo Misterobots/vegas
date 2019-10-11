@@ -274,6 +274,8 @@
 
             video = document.createElement('video');
             video.preload = true;
+            video.autoplay= true;
+            video.muted= muted;
 
             srcs.forEach(function (src) {
                 source = document.createElement('source');
