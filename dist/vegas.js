@@ -272,8 +272,8 @@
                 srcs = [ srcs ];
             }
 
-            video = document.createElement('video');
-            video.preload = true;
+            video = document.createElement('iframe');
+            //video.preload = true;
             
 
             srcs.forEach(function (src) {
