@@ -509,7 +509,7 @@
                                 .addClass('vegas-transition-' + transition + '-out');
 
                             $slides.each(function () {
-                                var video = $slides.find('video').get(0);
+                                var video = $slides.find('iframe').get(0);
 
                                 if (video) {
                                     video.volume = 1;
