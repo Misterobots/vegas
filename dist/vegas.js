@@ -537,7 +537,7 @@
                     video.currentTime = 0;
                 }
 
-                video.play();
+               // video.play();
                 go();
             } else {
                 img.src = src;
