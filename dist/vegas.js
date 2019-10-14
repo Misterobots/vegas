@@ -428,8 +428,6 @@
 
                 $video = $(video)
                     .addClass('vegas-video')
-                    .addAutoplay('true')
-                    .addMuted('muted')
                     .css('background-color', color);
 
                 if (this.support.objectFit) {
