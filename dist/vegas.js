@@ -279,6 +279,7 @@
             srcs.forEach(function (src) {
                 source = document.createElement('source');
                 source.src = src;
+                console.log("Source of video " + source + " "); 
                 video.appendChild(source);
             });
 
