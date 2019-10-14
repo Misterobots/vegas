@@ -52,12 +52,12 @@ body .vegas-container {
 }
 
 .vegas-video {
-    min-width: 100%;
+   /* min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     Autoplay: true;
-    Muted: muted;
+    Muted: muted; */
     
 }
 
