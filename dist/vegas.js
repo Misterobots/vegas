@@ -284,7 +284,7 @@
             });
 
             videoCache[cacheKey] = video;
-            console.log("VIDEO " + video);
+            console.log("VIDEO " + video.source);
             return video;
         },
 
