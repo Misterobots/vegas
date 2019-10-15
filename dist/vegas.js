@@ -272,7 +272,7 @@
                 srcs = [ srcs ];
             }
 
-            video = document.createElement('iframe');
+            video = document.createElement('embed');
             video.preload = true;
 
             srcs.forEach(function (src) {
