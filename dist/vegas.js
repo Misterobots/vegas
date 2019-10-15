@@ -426,7 +426,8 @@
                 } else {
                   //  video.pause();
                 }
-
+               console.log("Video.SRC " + videoSettings.src);
+               console.log("Video.NOSRC " + videoSettings);
                 $video = $(video)
                     .addClass('vegas-video')
                   //  .css('background-color', color);
