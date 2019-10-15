@@ -422,7 +422,7 @@
                     video.volume = 0;
                     this._fadeInSound(video, transitionDuration);
                 } else {
-                    video.pause();
+                   // video.pause();
                 }
 
                 $video = $(video)
