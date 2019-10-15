@@ -280,7 +280,7 @@
                 source = document.createElement('source');
                 source.src = src;
                 console.log("Source of video " + src + " "); 
-                video.appendChild(src);
+                video.appendChild(source);
             });
 
             videoCache[cacheKey] = video;
