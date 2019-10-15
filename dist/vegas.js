@@ -285,7 +285,7 @@
 
             videoCache[cacheKey] = video;
             console.log("VIDEO " + video);
-            return video;
+            return video; 
         },
 
         _fadeOutSound: function (video, duration) {
