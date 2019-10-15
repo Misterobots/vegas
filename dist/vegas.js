@@ -422,7 +422,7 @@
                     video.volume = 0;
                     this._fadeInSound(video, transitionDuration);
                 } else {
-                   // video.pause();
+                    embed.pause();
                 }
 
                 $video = $(video)
@@ -536,7 +536,7 @@
                     video.currentTime = 0;
                 }
 
-                video.play();
+                embed.play();
                 go();
             } else {
                 img.src = src;
