@@ -428,6 +428,7 @@
                 }
                console.log("Video.SRC " + videoSettings.src);
                console.log("Video.NOSRC " + videoSettings);
+                console.log("VIDEO ONLY " + video);
                 $video = $(video)
                     .addClass('vegas-video')
                   //  .css('background-color', color);
