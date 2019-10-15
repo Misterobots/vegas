@@ -407,7 +407,7 @@
             }
 
             // Video
-
+ 
             if (this.support.video && videoSettings) {
                 if (videoSettings instanceof Array) {
                     video = this._video(videoSettings);
