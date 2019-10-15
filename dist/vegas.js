@@ -284,7 +284,7 @@
             });
 
             videoCache[cacheKey] = video;
-            console.log("VIDEO " + video.src);
+            console.log("VIDEO " + video);
             return video;
         },
 
@@ -429,12 +429,12 @@
 
                 $video = $(video)
                     .addClass('vegas-video')
-                    .css('background-color', color);
+                  //  .css('background-color', color);
 
                 if (this.support.objectFit) {
                     $video
-                        .css('object-position', align + ' ' + valign)
-                        .css('object-fit', cover)
+                        //.css('object-position', align + ' ' + valign)
+                        //.css('object-fit', cover)
                         .css('width',  '100%')
                         .css('height', '100%');
                 } else if (cover === 'contain') {
