@@ -444,7 +444,7 @@
                         .css('width',  '100%')
                         .css('height', '100%');
                 }
-
+                console.log("before append " + video);
                 $slide.append($video);
 
             // Image
