@@ -272,20 +272,18 @@
                 srcs = [ srcs ];
             }
 
-            video = document.createElement('iframe');
-            //video.preload = true;
-            
+            video = document.createElement('video');
+            video.preload = true;
 
             srcs.forEach(function (src) {
                 source = document.createElement('source');
                 source.src = src;
-                console.log("Source of video " + src + " "); 
                 video.appendChild(source);
             });
-            console.log("video.src" + video.source);
+
             videoCache[cacheKey] = video;
-            console.log("VIDEO " + video);
-            return video; 
+
+            return video;
         },
 
         _fadeOutSound: function (video, duration) {
@@ -300,7 +298,7 @@
                     self._fadeOutSound(video, duration);
                 }, delay);
             } else {
-              //  video.pause();
+                video.pause();
             }
         },
 
@@ -416,7 +414,7 @@
                 } else {
                     video = this._video(videoSettings.src);
                 }
-                console.log("this is before everything " + video);
+
                 video.loop  = videoSettings.loop !== undefined ? videoSettings.loop : true;
                 video.muted = videoSettings.mute !== undefined ? videoSettings.mute : true;
 
@@ -424,19 +422,17 @@
                     video.volume = 0;
                     this._fadeInSound(video, transitionDuration);
                 } else {
-                  //  video.pause();
+                    video.pause();
                 }
-               console.log("Video.SRC " + videoSettings.src);
-               console.log("Video.NOSRC " + videoSettings);
-                console.log("VIDEO ONLY " + video);
+
                 $video = $(video)
                     .addClass('vegas-video')
-                  //  .css('background-color', color);
+                    .css('background-color', color);
 
                 if (this.support.objectFit) {
                     $video
-                        //.css('object-position', align + ' ' + valign)
-                        //.css('object-fit', cover)
+                        .css('object-position', align + ' ' + valign)
+                        .css('object-fit', cover)
                         .css('width',  '100%')
                         .css('height', '100%');
                 } else if (cover === 'contain') {
@@ -444,7 +440,7 @@
                         .css('width',  '100%')
                         .css('height', '100%');
                 }
-                console.log("before append " + video);
+
                 $slide.append($video);
 
             // Image
@@ -511,7 +507,7 @@
                                 .addClass('vegas-transition-' + transition + '-out');
 
                             $slides.each(function () {
-                                var video = $slides.find('iframe').get(0);
+                                var video = $slides.find('video').get(0);
 
                                 if (video) {
                                     video.volume = 1;
@@ -540,7 +536,7 @@
                     video.currentTime = 0;
                 }
 
-               // video.play();
+                video.play();
                 go();
             } else {
                 img.src = src;
