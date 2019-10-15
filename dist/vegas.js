@@ -416,7 +416,7 @@
                 } else {
                     video = this._video(videoSettings.src);
                 }
-
+                console.log("this is before everything " + video);
                 video.loop  = videoSettings.loop !== undefined ? videoSettings.loop : true;
                 video.muted = videoSettings.mute !== undefined ? videoSettings.mute : true;
 
