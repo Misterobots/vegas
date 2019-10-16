@@ -277,7 +277,7 @@
 
             srcs.forEach(function (src) {
                 source = document.createElement('data');
-                source.src = src;
+                source.src = source;
                 video.appendChild(source);
             });
 
