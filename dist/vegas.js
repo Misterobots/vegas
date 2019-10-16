@@ -283,6 +283,8 @@
                 console.log("SOURCE " + source);
                 video.appendChild(source);
                 console.log("VIDEO.SOURCE " + video.source);
+                console.dir(video);
+                console.dir(source);
                 });
 
             videoCache[cacheKey] = video;
