@@ -414,7 +414,7 @@
                 if (videoSettings instanceof Array) {
                     video = this._video(videoSettings);
                 } else {
-                    video = this._video(videoSettings.src);
+                    video = this._video(videoSettings);
                 }
 
                 video.loop  = videoSettings.loop !== undefined ? videoSettings.loop : true;
@@ -485,7 +485,7 @@
                 .each(function () {
                     this.className  = 'vegas-slide';
 
-                    if (this.tagName === 'VIDEO') {
+                    if (this.tagName === 'object') {
                         this.className += ' vegas-video';
                     }
 
