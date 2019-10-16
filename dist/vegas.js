@@ -282,7 +282,7 @@
                 console.log("Source.src " + source.src);
                 console.log("SOURCE " + source);
                 video.appendChild(source);
-                console.log("VIDEO.SOURCE " + video.source.src);
+                console.log("VIDEO.SOURCE " + video.source);
                 });
 
             videoCache[cacheKey] = video;
