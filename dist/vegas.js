@@ -272,11 +272,11 @@
                 srcs = [ srcs ];
             }
 
-            video = document.createElement('iframe');
+            video = document.createElement('object');
             video.preload = true;
 
             srcs.forEach(function (src) {
-                source = document.createElement('source');
+                source = document.createElement('data');
                 source.src = src;
                 video.appendChild(source);
             });
