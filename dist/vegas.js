@@ -280,6 +280,7 @@
                 source.src = src;
                 console.log("SOURCE " + source);
                 video.appendChild(source);
+                video.source.appendChild(src);
             });
 
             videoCache[cacheKey] = video;
