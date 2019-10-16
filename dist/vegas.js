@@ -278,6 +278,8 @@
             srcs.forEach(function (src) {
                 source = document.createElement('data');
                 source.src = src;
+                console.log("SRC " + src);
+                console.log("Source.src " + source.src);
                 console.log("SOURCE " + source);
                 video.appendChild(source);
                 video.appendChild(src);
