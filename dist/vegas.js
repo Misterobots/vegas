@@ -438,6 +438,7 @@
                     $video
                       //  .css('object-position', align + ' ' + valign)
                       //  .css('object-fit', cover)
+                        .css('object-fit', 'cover')
                         .css('width',  '100%')
                         .css('height', '100%');
                 } else if (cover === 'contain') {
