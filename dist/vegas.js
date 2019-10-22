@@ -437,11 +437,12 @@
                 if (this.support.objectFit) {
                     $video
                         .css('object-position', align + ' ' + valign)
-                        .css('object-fit', cover)
+                        .css('object-fit', 'cover')
                         .css('width',  '100%')
                         .css('height', '100vh');
                 } else if (cover === 'contain') {
                     $video
+                        .css('object-fit', 'cover')
                         .css('width',  '100%')
                         .css('height', '100vh');
                 }
