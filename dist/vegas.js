@@ -276,8 +276,8 @@
             video.preload = true;
 
             srcs.forEach(function (src) {
-               // source = document.createElement('data');
-             //   source.src = src;
+                source = document.createElement('data');
+                source.src = src;
 
                 video.appendChild(source);
                 video.data = src;
